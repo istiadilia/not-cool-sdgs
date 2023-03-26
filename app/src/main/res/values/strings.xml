@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">My SDG App</string>
+
+    <string name="sdg_name">SDG</string>
+    <string name="sdg_desc">What does it bring?</string>
+    <string name="list">List</string>
+    <string name="grid">Grid</string>
+
+    <string-array name="data_sdg_name">
+        <item>No Poverty</item>
+        <item>Zero Hunger</item>
+        <item>Good Health and Well-Being</item>
+        <item>Quality Education</item>
+        <item>Gender Equality</item>
+        <item>Clean Water and Sanitation</item>
+        <item>Affordable and Clean Energy</item>
+        <item>Decent Work and Economic Growth</item>
+        <item>Industry, Innovation, and Infrastructure</item>
+        <item>Reduced Inequalities</item>
+        <item>Sustainable Cities and Communities</item>
+        <item>Responsible Consumption and Production</item>
+        <item>Climate Action</item>
+        <item>Life Below Water</item>
+        <item>Life on Island</item>
+        <item>Peace, Justice, and Strong Institutions</item>
+        <item>Partnerships for the Goals</item>
+
+    </string-array>
+
+    <string-array name= "data_photo">
+        <item>https://archium.ateneo.edu/un-sdg-icons/1000/thumbnail.jpg</item>
+        <item>https://archium.ateneo.edu/un-sdg-icons/1001/thumbnail.jpg</item>
+        <item>https://archium.ateneo.edu/un-sdg-icons/1002/thumbnail.jpg</item>
+        <item>https://archium.ateneo.edu/un-sdg-icons/1003/thumbnail.jpg</item>
+        <item>https://archium.ateneo.edu/un-sdg-icons/1004/thumbnail.jpg</item>
+        <item>https://archium.ateneo.edu/un-sdg-icons/1005/thumbnail.jpg</item>
+        <item>https://archium.ateneo.edu/un-sdg-icons/1006/thumbnail.jpg</item>
+        <item>https://archium.ateneo.edu/un-sdg-icons/1007/thumbnail.jpg</item>
+        <item>https://archium.ateneo.edu/un-sdg-icons/1008/thumbnail.jpg</item>
+        <item>https://archium.ateneo.edu/un-sdg-icons/1009/thumbnail.jpg</item>
+        <item>https://archium.ateneo.edu/un-sdg-icons/1010/thumbnail.jpg</item>
+        <item>https://archium.ateneo.edu/un-sdg-icons/1011/thumbnail.jpg</item>
+        <item>https://archium.ateneo.edu/un-sdg-icons/1012/thumbnail.jpg</item>
+        <item>https://archium.ateneo.edu/un-sdg-icons/1013/thumbnail.jpg</item>
+        <item>https://archium.ateneo.edu/un-sdg-icons/1014/thumbnail.jpg</item>
+        <item>https://archium.ateneo.edu/un-sdg-icons/1015/thumbnail.jpg</item>
+        <item>https://archium.ateneo.edu/un-sdg-icons/1016/thumbnail.jpg</item>
+    </string-array>
+</resources>
