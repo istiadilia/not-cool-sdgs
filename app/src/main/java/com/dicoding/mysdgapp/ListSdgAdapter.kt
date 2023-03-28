@@ -44,3 +44,7 @@ class ListSdgAdapter(private val listSdg: ArrayList<Sdgs>) : RecyclerView.Adapte
     //mendapat ukuran set data
     override fun getItemCount(): Int = listSdg.size
 }
+
+private fun ImageView.setImageResource(photo: String) {
+
+}
