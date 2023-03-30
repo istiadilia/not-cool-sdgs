@@ -1,36 +1,44 @@
 package com.dicoding.mysdgapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
+import android.view.MenuItem
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.dicoding.mysdgapp.databinding.ActivityMainBinding
 
 public class MainActivity : AppCompatActivity() {
     private lateinit var mySdgs: RecyclerView
+    private lateinit var binding: ActivityMainBinding
     private val list = ArrayList<Sdgs>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        //installSplashScreen()
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-
-        mySdgs = findViewById(R.id.my_sdgs)
-        mySdgs.setHasFixedSize(true)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
         list.addAll(getListSdgs())
         showRecyclerList()
     }
 
     private fun showRecyclerList() {
+        binding.mySdgs.layoutManager = LinearLayoutManager(this)
+        val sdgAdapter = SdgAdapter(list)
+        binding.mySdgs.adapter = sdgAdapter
+        /*
         mySdgs.layoutManager = LinearLayoutManager(this)
-        val listSdgAdapter = ListSdgAdapter(list)
+        val listSdgAdapter = SdgAdapter(list)
         mySdgs.adapter = listSdgAdapter
-        listSdgAdapter.setOnItemClickCallback(object : ListSdgAdapter.OnItemClickCallback {
+        listSdgAdapter.setOnItemClickCallback(object : SdgAdapter.OnItemClickCallback {
             override fun onItemClicked(data: Sdgs) {
                 showSelectedSdg(data)
             }
         })
+         */
     }
 
     //toast
@@ -57,7 +65,14 @@ public class MainActivity : AppCompatActivity() {
         return super.onCreateOptionsMenu(menu)
     }
 
-
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            R.id.action_about -> {
+                startActivity(Intent(this@MainActivity, AboutActivity::class.java))
+            }
+        }
+        return super.onOptionsItemSelected(item)
+    }
 
 
 }

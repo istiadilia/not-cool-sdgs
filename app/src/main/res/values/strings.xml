@@ -4,8 +4,14 @@
     <string name="sdg_name">SDG</string>
     <string name="sdg_desc">What does it bring?</string>
     <string name="btn_more">See more</string>
-    <string name="list">List</string>
-    <string name="grid">Grid</string>
+    <string name="about">About</string>
+
+    <string name="about_name">Isti Adilia Habibah</string>
+    <string name="about_email">istiadilia@gmail.com</string>
+    <string name="about_image">
+        <item>@drawable/fotoici</item>
+    </string>
+
 
     <string-array name="data_sdg_name">
         <item>No Poverty</item>
