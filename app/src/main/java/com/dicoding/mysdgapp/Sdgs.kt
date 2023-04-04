@@ -5,6 +5,7 @@ import kotlinx.parcelize.Parcelize
 
 @Parcelize
 data class Sdgs(
+    val number: String,
     val name: String,
     val type: String,
     val explanation: String,

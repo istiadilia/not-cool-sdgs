@@ -21,10 +21,11 @@ class SdgAdapter(private val listSdg: ArrayList<Sdgs>) : RecyclerView.Adapter<Sd
 
     // memasukkan preview di cardview
     override fun onBindViewHolder(holder: SdgAdapter.ListViewHolder, position: Int) {
-        val (name, type, photo) = listSdg[position]
+        val (number, name, type, photo) = listSdg[position]
         Glide.with(holder.itemView.context)
             .load(photo)
             .into(holder.binding.imgItemPhoto)
+        holder.binding.tvItemNumber.text = number
         holder.binding.tvItemName.text = name
         holder.binding.tvItemType.text = type
 

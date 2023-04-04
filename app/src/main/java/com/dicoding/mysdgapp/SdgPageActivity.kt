@@ -6,6 +6,7 @@ import android.view.MenuItem
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.bumptech.glide.Glide
+import com.bumptech.glide.request.RequestOptions.bitmapTransform
 import com.dicoding.mysdgapp.databinding.ActivitySdgPageBinding
 
 class SdgPageActivity : AppCompatActivity() {
@@ -38,11 +39,13 @@ class SdgPageActivity : AppCompatActivity() {
             binding.pageTitle.text = sdgs.name
             binding.pageType.text = sdgs.type
             binding.pageDescription.text = sdgs.description
+            binding.pagePredescription.text = sdgs.explanation
             Glide.with(this)
                 .load(sdgs.photo)
                 .into(binding.pageImage)
             Glide.with(this)
                 .load(sdgs.bgPhoto)
+                //.override(15, 15)
                 .into(binding.pageImageBg)
         }
     }

@@ -2,6 +2,7 @@
     <string name="app_name">My SDG App</string>
 
     <string name="sdg_name">SDG</string>
+    <string name="sdg_number">#no</string>
     <string name="sdg_type">Pillar type</string>
     <string name="sdg_predescription">This is where we explain what the SDG means.</string>
     <string name="sdg_description">The Sustainable Development Goals or Global Goals are a collection of seventeen interlinked objectives designed to serve as a "shared blueprint for peace and prosperity for people and the planet, now and into the future".</string>
@@ -16,7 +17,25 @@
 
     <string name="splash_title">My SDGs App</string>
 
-
+    <string-array name="data_sdg_number">
+        <item>#1</item>
+        <item>#2</item>
+        <item>#3</item>
+        <item>#4</item>
+        <item>#5</item>
+        <item>#6</item>
+        <item>#7</item>
+        <item>#8</item>
+        <item>#9</item>
+        <item>#10</item>
+        <item>#11</item>
+        <item>#12</item>
+        <item>#13</item>
+        <item>#14</item>
+        <item>#15</item>
+        <item>#16</item>
+        <item>#17</item>
+    </string-array>
     <string-array name="data_sdg_name">
         <item>No Poverty</item>
         <item>Zero Hunger</item>
@@ -99,43 +118,43 @@
     </string-array>
 
     <string-array name= "data_photo">
-        <item>https://archium.ateneo.edu/un-sdg-icons/1000/thumbnail.jpg</item>
-        <item>https://archium.ateneo.edu/un-sdg-icons/1001/thumbnail.jpg</item>
-        <item>https://archium.ateneo.edu/un-sdg-icons/1002/thumbnail.jpg</item>
-        <item>https://archium.ateneo.edu/un-sdg-icons/1003/thumbnail.jpg</item>
-        <item>https://archium.ateneo.edu/un-sdg-icons/1004/thumbnail.jpg</item>
-        <item>https://archium.ateneo.edu/un-sdg-icons/1005/thumbnail.jpg</item>
-        <item>https://archium.ateneo.edu/un-sdg-icons/1006/thumbnail.jpg</item>
-        <item>https://archium.ateneo.edu/un-sdg-icons/1007/thumbnail.jpg</item>
-        <item>https://archium.ateneo.edu/un-sdg-icons/1008/thumbnail.jpg</item>
-        <item>https://archium.ateneo.edu/un-sdg-icons/1009/thumbnail.jpg</item>
-        <item>https://archium.ateneo.edu/un-sdg-icons/1010/thumbnail.jpg</item>
-        <item>https://archium.ateneo.edu/un-sdg-icons/1011/thumbnail.jpg</item>
-        <item>https://archium.ateneo.edu/un-sdg-icons/1012/thumbnail.jpg</item>
-        <item>https://archium.ateneo.edu/un-sdg-icons/1013/thumbnail.jpg</item>
-        <item>https://archium.ateneo.edu/un-sdg-icons/1014/thumbnail.jpg</item>
-        <item>https://archium.ateneo.edu/un-sdg-icons/1015/thumbnail.jpg</item>
-        <item>https://archium.ateneo.edu/un-sdg-icons/1016/thumbnail.jpg</item>
+        <item>https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Sustainable_Development_Goal_1.png/1200px-Sustainable_Development_Goal_1.png</item>
+        <item>https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Sustainable_Development_Goal_2.png/1200px-Sustainable_Development_Goal_2.png</item>
+        <item>https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Sustainable_Development_Goal_3.png/1200px-Sustainable_Development_Goal_3.png</item>
+        <item>https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Sustainable_Development_Goal_4.png/1200px-Sustainable_Development_Goal_4.png</item>
+        <item>https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Sustainable_Development_Goal_5.png/1024px-Sustainable_Development_Goal_5.png</item>
+        <item>https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Sustainable_Development_Goal_6.png/1200px-Sustainable_Development_Goal_6.png</item>
+        <item>https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Sustainable_Development_Goal_7.png/1200px-Sustainable_Development_Goal_7.png</item>
+        <item>https://www.un.org/esa/ffd/ffddialogue/images/E_SDG%20goals_icons-individual-rgb-08.png</item>
+        <item>https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Sustainable_Development_Goal_9.png/800px-Sustainable_Development_Goal_9.png</item>
+        <item>https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Sustainable_Development_Goal_10.png/1200px-Sustainable_Development_Goal_10.png</item>
+        <item>https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Sustainable_Development_Goal_11.png/800px-Sustainable_Development_Goal_11.png</item>
+        <item>https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Sustainable_Development_Goal_12.png/1024px-Sustainable_Development_Goal_12.png</item>
+        <item>https://upload.wikimedia.org/wikipedia/commons/7/70/Sustainable_Development_Goal_13.png</item>
+        <item>https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Sustainable_Development_Goal_14.png/1200px-Sustainable_Development_Goal_14.png</item>
+        <item>https://upload.wikimedia.org/wikipedia/commons/1/18/Sustainable_Development_Goal_15.png</item>
+        <item>https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Sustainable_Development_Goal_16.png/1200px-Sustainable_Development_Goal_16.png</item>
+        <item>https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Sustainable_Development_Goal_17.png/1024px-Sustainable_Development_Goal_17.png</item>
     </string-array>
 
     <!--untuk imagebg-->
     <string-array name="data_background">
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
+        <item>https://cdn.punchng.com/wp-content/uploads/2019/12/05092036/Poverty.jpg</item>
+        <item>https://i.guim.co.uk/img/media/d548467e5f91002c8b09b42460d670d1aff3626e/0_244_3500_2100/master/3500.jpg?width=1200&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=d53835de54bd1553056396b4b1a8fa0d</item>
+        <item>https://media.istockphoto.com/id/1347375453/photo/hands-holding-green-happy-smile-face-paper-cut-good-feedback-rating-and-positive-customer.jpg?s=612x612&amp;w=0&amp;k=20&amp;c=acMuJHuCTrNMu1hgUjxj17X6ckBS5XuhHLRW440xU3w=</item>
+        <item>https://media.globalcitizen.org/thumbnails/d4/cc/d4ccde3e–4a87-48f7-b0b1-963f3f3c2c18/4-quality-education-children-in-class-hero.jpg__1600x900_q85_crop_subsampling-2.jpg</item>
+        <item>https://www.undrr.org/sites/default/files/styles/landscape_16_9/public/2021-04/Gender%20Equality%20slogan.jpg?itok=h2kooqLP</item>
+        <item>https://www.iisd.org/sites/default/files/styles/og_image/public/2022–03/hand-washing-water.jpg?itok=542sjljT</item>
+        <item>https://www.eliamep.gr/wp-content/uploads/2020/06/Policy-paper-34.jpg</item>
+        <item>https://sustainability.uga.edu/_resources/images/sdg-highlights/37509-014.jpg</item>
+        <item>https://bsg-b2c-app-s3.s3.amazonaws.com/files/sdg09-hero-62a1926a97030.jpg</item>
+        <item>https://sdg-action.org/wp-content/uploads/2022/02/Lawson_SDGs.jpg</item>
+        <item>https://fastcdn.impakter.com/wp-content/uploads/2018/12/chuttersnap-685131-unsplash-e1544460092168.jpg?strip=all&amp;lossy=1&amp;quality=92&amp;ssl=1</item>
+        <item>https://www.iisd.org/sites/default/files/styles/og_image/public/2021-08/sustainable-consumption.jpg?itok=HaYTPHBP</item>
+        <item>https://www.gse.harvard.edu/sites/default/files//1500x1000-climate-change-is-real.jpg</item>
+        <item>https://images.squarespace-cdn.com/content/v1/5f5a30614e872e3a91f2ec7f/1629913428389-9PG26WJDLU1SGFZROWJZ/AdobeStock_321027086.jpeg?format=1000w</item>
+        <item>https://images.squarespace-cdn.com/content/v1/55227abee4b04cf2fe2b34b8/1597332394357-XZZ9TR3X656XVN1XYBFL/shripal-daphtary-yCw16KBrMfY-unsplash.jpg</item>
+        <item>https://images.squarespace-cdn.com/content/v1/5ae79b0d3c3a535560ce1849/1601641501328-Z52GHPYC4P35SXOZ1GDM/Justice_GettyImages-1140705087.jpg?format=1000w</item>
+        <item>https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjExNzczfQ&amp;w=2000</item>
     </string-array>
 </resources>

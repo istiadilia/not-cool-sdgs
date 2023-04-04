@@ -19,15 +19,23 @@ public class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        binding.about.setOnClickListener {
+            val intent = Intent(this@MainActivity, AboutActivity::class.java)
+            startActivity(intent)
+        }
+
+        mySdgs = binding.recyclerView
         list.addAll(getListSdgs())
         showRecyclerList()
     }
 
     // untuk cardview yang di scroll view main activity
     private fun getListSdgs(): ArrayList<Sdgs> {
+        val dataNumber = resources.getStringArray(R.array.data_sdg_number)
         val dataName = resources.getStringArray(R.array.data_sdg_name)
         val dataType = resources.getStringArray(R.array.data_sdg_type)
         val dataExplanation = resources.getStringArray(R.array.data_sdg_desc)
@@ -39,6 +47,7 @@ public class MainActivity : AppCompatActivity() {
 
         for (i in dataName.indices) {
             val sdgs = Sdgs(
+                dataNumber[i],
                 dataName[i],
                 dataType[i],
                 dataExplanation[i],
