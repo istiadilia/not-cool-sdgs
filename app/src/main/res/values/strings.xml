@@ -2,7 +2,8 @@
     <string name="app_name">My SDG App</string>
 
     <string name="sdg_name">SDG</string>
-    <string name="sdg_desc">What does it bring?</string>
+    <string name="sdg_type">Pillar type</string>
+    <string name="sdg_description">The Sustainable Development Goals or Global Goals are a collection of seventeen interlinked objectives designed to serve as a "shared blueprint for peace and prosperity for people and the planet, now and into the future".</string>
     <string name="btn_more">See more</string>
     <string name="about">About</string>
 
@@ -33,6 +34,26 @@
         <item>Partnerships for the Goals</item>
     </string-array>
 
+    <string-array name="data_sdg_type">
+        <item>Social</item>
+        <item>Social</item>
+        <item>Social</item>
+        <item>Social</item>
+        <item>Social</item>
+        <item>Environment</item>
+        <item>Economic</item>
+        <item>Economic</item>
+        <item>Economic</item>
+        <item>Economic</item>
+        <item>Environment</item>
+        <item>Environment</item>
+        <item>Environment</item>
+        <item>Environment</item>
+        <item>Environment</item>
+        <item>Law</item>
+        <item>Economic</item>
+    </string-array>
+
     <string-array name="data_sdg_desc">
         <item>End poverty in all its forms everywhere.</item>
         <item>End hunger, achieve food security and improved nutrition and promote sustainable agriculture.</item>
@@ -53,8 +74,22 @@
         <item>Strengthen the means of implementation and revitalize the Global Partnership for Sustainable Development.</item>
     </string-array>
 
+    <!--untuk sdg description-->
     <string-array name="data_sdg_content">
         <item>The first Sustainable Development Goal aims to “End poverty in all its forms everywhere”. Its seven associated targets aims, among others, to eradicate extreme poverty for all people everywhere, reduce at least by half the proportion of men, women and children of all ages living in poverty, and implement nationally appropriate social protection systems and measures for all, including floors, and by 2030 achieve substantial coverage of the poor and the vulnerable</item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
         <item></item>
         <item></item>
         <item></item>
@@ -78,5 +113,26 @@
         <item>https://archium.ateneo.edu/un-sdg-icons/1014/thumbnail.jpg</item>
         <item>https://archium.ateneo.edu/un-sdg-icons/1015/thumbnail.jpg</item>
         <item>https://archium.ateneo.edu/un-sdg-icons/1016/thumbnail.jpg</item>
+    </string-array>
+
+    <!--untuk imagebg-->
+    <string-array name="background">
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
     </string-array>
 </resources>

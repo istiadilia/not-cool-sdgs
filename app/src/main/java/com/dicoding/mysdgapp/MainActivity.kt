@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.view.View
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -16,8 +17,8 @@ public class MainActivity : AppCompatActivity() {
     private val list = ArrayList<Sdgs>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        //installSplashScreen()
         super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
@@ -26,40 +27,30 @@ public class MainActivity : AppCompatActivity() {
     }
 
     private fun showRecyclerList() {
-        binding.mySdgs.layoutManager = LinearLayoutManager(this)
+        binding.recyclerView.layoutManager = LinearLayoutManager(this)
         val sdgAdapter = SdgAdapter(list)
-        binding.mySdgs.adapter = sdgAdapter
-        /*
-        mySdgs.layoutManager = LinearLayoutManager(this)
-        val listSdgAdapter = SdgAdapter(list)
-        mySdgs.adapter = listSdgAdapter
-        listSdgAdapter.setOnItemClickCallback(object : SdgAdapter.OnItemClickCallback {
-            override fun onItemClicked(data: Sdgs) {
-                showSelectedSdg(data)
-            }
-        })
-         */
+        binding.recyclerView.adapter = sdgAdapter
     }
 
-    //toast
-    private fun showSelectedSdg(sdgs: Sdgs) {
-        Toast.makeText(this, "You chose " + sdgs.name, Toast.LENGTH_SHORT).show()
-    }
-
-    private fun getListSdgs(): Collection<Sdgs> {
+    // untuk cardview yang di scroll view main activity
+    private fun getListSdgs(): ArrayList<Sdgs> {
         val dataName = resources.getStringArray(R.array.data_sdg_name)
-        val dataDescription = resources.getStringArray(R.array.data_sdg_desc)
+        val dataType = resources.getStringArray(R.array.data_sdg_type)
         val dataPhoto = resources.getStringArray(R.array.data_photo)
+
         val listSdgs = ArrayList<Sdgs>()
 
         for (i in dataName.indices) {
-            val sdgs = Sdgs(dataName[i], dataDescription[i], dataPhoto[i])
+            val sdgs = Sdgs(
+                dataName[i],
+                dataType[i],
+                dataPhoto[i]
+            )
             listSdgs.add(sdgs)
         }
         return listSdgs
     }
 
-    //menu grid or list
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.menu_main, menu)
         return super.onCreateOptionsMenu(menu)
@@ -73,6 +64,5 @@ public class MainActivity : AppCompatActivity() {
         }
         return super.onOptionsItemSelected(item)
     }
-
 
 }

@@ -13,7 +13,7 @@ class AboutActivity : AppCompatActivity() {
 
         supportActionBar?.title = "Get to know me"
 
-        //masih bingung gmn munculin about disini
+        // masih bingung gmn munculin about disini
         //binding.profileImage.load(R.string.about_image)
         //binding.profileName.text(R.string.about_name)
         //binding.profileEmail.text(R.string.about_email)

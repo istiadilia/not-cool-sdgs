@@ -3,20 +3,13 @@ package com.dicoding.mysdgapp
 import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import android.widget.ImageView
 import androidx.recyclerview.widget.AdapterListUpdateCallback
 import androidx.recyclerview.widget.RecyclerView
 import com.dicoding.mysdgapp.databinding.ItemRowSdgsBinding
 
+// done
 class SdgAdapter(private val listSdg: ArrayList<Sdgs>) : RecyclerView.Adapter<SdgAdapter.ListViewHolder>() {
-    private lateinit var onItemClickCallback: OnItemClickCallback
-
-    fun setOnItemClickCallback(onItemClickCallback: OnItemClickCallback) {
-        this.onItemClickCallback = onItemClickCallback
-    }
-
-    interface OnItemClickCallback {
-        fun onItemClicked(data: Sdgs)
-    }
 
     class ListViewHolder(var binding: ItemRowSdgsBinding) : RecyclerView.ViewHolder(binding.root)
 
@@ -25,6 +18,7 @@ class SdgAdapter(private val listSdg: ArrayList<Sdgs>) : RecyclerView.Adapter<Sd
         return ListViewHolder(binding)
     }
 
+    // memasukkan preview di cardviewnya
     override fun onBindViewHolder(holder: SdgAdapter.ListViewHolder, position: Int) {
         val (name, description, photo) = listSdg[position]
         holder.binding.imgItemPhoto.setImageResource(photo)
@@ -40,6 +34,20 @@ class SdgAdapter(private val listSdg: ArrayList<Sdgs>) : RecyclerView.Adapter<Sd
         }
     }
 
+    private lateinit var onItemClickCallback: OnItemClickCallback
+
+    fun setOnItemClickCallback(onItemClickCallback: OnItemClickCallback) {
+        this.onItemClickCallback = onItemClickCallback
+    }
+
+    interface OnItemClickCallback {
+        fun onItemClicked(data: Sdgs)
+    }
+
     override fun getItemCount(): Int = listSdg.size
+
+}
+
+private fun ImageView.setImageResource(photo: String) {
 
 }
