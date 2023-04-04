@@ -3,6 +3,7 @@
 
     <string name="sdg_name">SDG</string>
     <string name="sdg_type">Pillar type</string>
+    <string name="sdg_predescription">This is where we explain what the SDG means.</string>
     <string name="sdg_description">The Sustainable Development Goals or Global Goals are a collection of seventeen interlinked objectives designed to serve as a "shared blueprint for peace and prosperity for people and the planet, now and into the future".</string>
     <string name="btn_more">See more</string>
     <string name="about">About</string>
@@ -12,6 +13,8 @@
     <string name="about_image">
         <item>@drawable/fotoici</item>
     </string>
+
+    <string name="splash_title">My SDGs App</string>
 
 
     <string-array name="data_sdg_name">
@@ -76,23 +79,23 @@
 
     <!--untuk sdg description-->
     <string-array name="data_sdg_content">
-        <item>The first Sustainable Development Goal aims to “End poverty in all its forms everywhere”. Its seven associated targets aims, among others, to eradicate extreme poverty for all people everywhere, reduce at least by half the proportion of men, women and children of all ages living in poverty, and implement nationally appropriate social protection systems and measures for all, including floors, and by 2030 achieve substantial coverage of the poor and the vulnerable</item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
+        <item>The first Sustainable Development Goal aims to “End poverty in all its forms everywhere”. Its seven associated targets aims, among others, to eradicate extreme poverty for all people everywhere, reduce at least by half the proportion of men, women and children of all ages living in poverty, and implement nationally appropriate social protection systems and measures for all, including floors, and by 2030 achieve substantial coverage of the poor and the vulnerable.</item>
+        <item>The Zero Hunger Challenge has since garnered widespread support from many member States and other entities. It calls for: 1) Zero stunted children under the age of two; 2) 100% access to adequate food all year round; 3) All food systems are sustainable; 4) 100% increase in smallholder productivity and income; and 5) Zero loss or waste of food.</item>
+        <item>The associated targets aim to reduce the global maternal mortality ratio; end preventable deaths of newborns and children; end the epidemics of AIDS, tuberculosis, malaria and other communicable diseases; reduce mortality from non-communicable diseases; strengthen the prevention and treatment of substance abuse; halve the number of deaths and injuries from road traffic accidents; ensure universal access to sexual and reproductive health-care services; achieve universal health coverage; and reduce the number of deaths and illnesses from hazardous chemicals and pollution.</item>
+        <item>Education for Sustainable Development is closely tied into the international discussions on sustainable development, which have grown in scale and importance since, Our Common Future appeared in 1987, providing the first widely-used definition of sustainable development as the "development that meets the needs of the present without compromising the ability of future generations to meet their own needs."</item>
+        <item>Gender inequalities are still deep-rooted in every society. Women suffer from lack of access to decent work and face occupational segregation and gender wage gaps. In many situations, they are denied access to basic education and health care and are victims of violence and discrimination. They are under-represented in political and economic decision-making processes.</item>
+        <item>Water and sanitation are at the core of sustainable development, but today, 2.2 billion people lack access to safely managed drinking water, and more than 4.2 billion people lack safely managed sanitation. Climate change is exacerbating the situation, with increasing disasters such as floods and droughts. 80 per cent of wastewater in the world flows back into the ecosystem without being treated or reused, and 70 per cent of the world’s natural wetland extent has been lost, including a significant loss of freshwater species.</item>
+        <item>A guide for collective action on energy across sectors that transcends individual and piecemeal approaches and delivers scaled-up and broad impact calls for action in five key areas: closing the energy access gap; rapidly transitioning to decarbonized energy systems; mobilizing adequate and predictable finance; leaving no one behind on the path to a net-zero future; and harnessing innovation, technology and data. Importantly, the Roadmap also includes two sets of milestones for 2025 and 2030.</item>
+        <item>The key role of decent work for all in achieving sustainable development is highlighted by Sustainable Development Goal 8 which aims to “promote sustained, inclusive and sustainable economic growth, full and productive employment and decent work for all”. Decent work, employment creation, social protection, rights at work and social dialogue represent integral elements of the new 2030 Agenda for Sustainable Development. Furthermore, crucial aspects of decent work are broadly rooted in the targets of many of the other 16 goals.</item>
+        <item>In undertaking the five-year review of the implementation of Agenda 21 during its nineteenth Special Session in 1997, the UN General Assembly further noted that, over the next twenty years, transportation would be expected to be the major driving force behind a growing world demand for energy. JPOI provided multiple anchor points for sustainable transport, in the context of infrastructure, public transport systems, goods delivery networks, affordability, efficiency and convenience of transportation, as well as improving urban air quality and health, and reduce greenhouse gas emissions. </item>
+        <item>The Reduce Inequality within and among Countries Agenda highlights the necessity "to substantially expand at global level the number of scholarships available to developing countries, in particular least developed countries, small island developing States and African countries, for enrollment in higher education, including vocational training and information and communications technology, technical, engineering and scientific programmes".</item>
+        <item>"Promoting sustainable human settlements development" is the subject of Chapter 7 of Agenda 21, which calls for 1) providing adequate shelter for all; 2) improving human settlements management; 3) promoting sustainable land-use planning and management; 4) promoting the integrated provision of environmental infrastructure: water, sanitation, drainage and solid waste management; 5) promoting sustainable energy and transport systems in human settlements; 6) promoting human settlements planning and management in disaster-prone areas; 7) promoting sustainable construction industry activities; and 8) promoting human resource development and capacity-building for human settlements development.</item>
+        <item>At the World Summit on Sustainable Development (WSSD), sustainable consumption and production was identified as one of the three overarching objectives of, and essential requirements for, sustainable development, together with poverty eradication and the management of natural resources in order to foster economic and social development. It was acknowledged that fundamental changes in the way societies produce and consume are indispensable for achieving global sustainable development.</item>
+        <item>Our climate is heating rapidly. The average global temperatures have increased by 1.2 degrees Celsius since 1880, particularly in the late 20th century. The concentration of atmospheric CO2, the GHG that contributes more than 2/3 to global warming, is at its highest level ever. The Intergovernmental Panel on Climate Change (IPCC) steadily points out that human activities have warmed the atmosphere, ocean and land, producing widespread and rapid changes in the atmosphere, ocean, cryosphere and biosphere. Due to these changes in climate, the number of weather, climate and water-related disasters has increased by a factor of five over the past 50 years, causing over 2 million deaths and US$3.64 trillion in losses.</item>
+        <item>Oceans, seas and coastal areas form an integrated and essential component of the Earth’s ecosystem and are critical to sustainable development. They cover more than two-thirds of the earth’s surface and contain 97% of the planet’s water. Oceans contribute to poverty eradication by creating sustainable livelihoods and decent work. Over three billion people depend on marine and coastal resources for their livelihoods. In addition, oceans are crucial for global food security and human health. They are also the primary regulator of the global climate, an important sink for greenhouse gases and they provide us with water and the oxygen we breathe. Finally, oceans host huge reservoirs of biodiversity.</item>
+        <item>At the Rio+20 Conference, Member States reaffirmed, through paragraphs 197- 204 of the outcome document, the Future We Want, that “intrinsic value of biological diversity, as well as the ecological, genetic, social, economic, scientific, educational, cultural, recreational and aesthetic values of biological diversity and its critical role in maintaining ecosystems that provide essential services, which are critical foundations for sustainable development and human well-being”. Member States also recognized “the severity of global biodiversity loss and degradation of ecosystems” and stress the negative impact that this situation has on food security, nutrition, access to water, health of the rural poor and people worldwide”.</item>
+        <item>The High-level Political Forum on sustainable development is today the main United Nations platform on sustainable development. It provides political leadership, guidance and recommendations. It follows up and reviews the implementation of sustainable development commitments and the 2030 Agenda for Sustainable Development. It addresses new and emerging challenges; promotes the science-policy interface and enhances the integration of economic, social and environmental dimensions of sustainable development.</item>
+        <item>Partnerships for sustainable development are multi-stakeholder initiatives voluntarily undertaken by Governments, intergovernmental organizations, major groups and others stakeholders, which efforts are contributing to the implementation of inter-governmentally agreed development goals and commitments, as included in Agenda 21, the Johannesburg Plan of Implementation, the Millennium Declaration, the outcome document of the United Nations Conference on Sustainable Development (Rio+20) entitled “The Future We Want”, the Third International Conference on Small island Developing States, and the 2030 Agenda for Sustainable Development.</item>
     </string-array>
 
     <string-array name= "data_photo">
@@ -116,7 +119,7 @@
     </string-array>
 
     <!--untuk imagebg-->
-    <string-array name="background">
+    <string-array name="data_background">
         <item></item>
         <item></item>
         <item></item>

@@ -26,17 +26,14 @@ public class MainActivity : AppCompatActivity() {
         showRecyclerList()
     }
 
-    private fun showRecyclerList() {
-        binding.recyclerView.layoutManager = LinearLayoutManager(this)
-        val sdgAdapter = SdgAdapter(list)
-        binding.recyclerView.adapter = sdgAdapter
-    }
-
     // untuk cardview yang di scroll view main activity
     private fun getListSdgs(): ArrayList<Sdgs> {
         val dataName = resources.getStringArray(R.array.data_sdg_name)
         val dataType = resources.getStringArray(R.array.data_sdg_type)
+        val dataExplanation = resources.getStringArray(R.array.data_sdg_desc)
+        val dataDescription = resources.getStringArray(R.array.data_sdg_content)
         val dataPhoto = resources.getStringArray(R.array.data_photo)
+        val dataBackground = resources.getStringArray(R.array.data_background)
 
         val listSdgs = ArrayList<Sdgs>()
 
@@ -44,7 +41,10 @@ public class MainActivity : AppCompatActivity() {
             val sdgs = Sdgs(
                 dataName[i],
                 dataType[i],
-                dataPhoto[i]
+                dataExplanation[i],
+                dataDescription[i],
+                dataPhoto[i],
+                dataBackground[i]
             )
             listSdgs.add(sdgs)
         }
@@ -65,4 +65,9 @@ public class MainActivity : AppCompatActivity() {
         return super.onOptionsItemSelected(item)
     }
 
+    private fun showRecyclerList() {
+        binding.recyclerView.layoutManager = LinearLayoutManager(this)
+        val sdgAdapter = SdgAdapter(list)
+        binding.recyclerView.adapter = sdgAdapter
+    }
 }

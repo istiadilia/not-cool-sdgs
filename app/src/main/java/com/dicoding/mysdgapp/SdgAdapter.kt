@@ -6,6 +6,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.recyclerview.widget.AdapterListUpdateCallback
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.dicoding.mysdgapp.databinding.ItemRowSdgsBinding
 
 // done
@@ -18,13 +19,18 @@ class SdgAdapter(private val listSdg: ArrayList<Sdgs>) : RecyclerView.Adapter<Sd
         return ListViewHolder(binding)
     }
 
-    // memasukkan preview di cardviewnya
+    // memasukkan preview di cardview
     override fun onBindViewHolder(holder: SdgAdapter.ListViewHolder, position: Int) {
-        val (name, description, photo) = listSdg[position]
-        holder.binding.imgItemPhoto.setImageResource(photo)
+        val (name, type, photo) = listSdg[position]
+        Glide.with(holder.itemView.context)
+            .load(photo)
+            .into(holder.binding.imgItemPhoto)
         holder.binding.tvItemName.text = name
-        holder.binding.tvItemDescription.text = description
+        holder.binding.tvItemType.text = type
+
+        // activity yang akan dilakukan setelah diklik
         holder.itemView.setOnClickListener() {
+            // intent ke sdg page activity
             val intentDetail = Intent(holder.itemView.context, SdgPageActivity::class.java)
             intentDetail.putExtra(
                 SdgPageActivity.EXTRA_SDG,
@@ -33,6 +39,8 @@ class SdgAdapter(private val listSdg: ArrayList<Sdgs>) : RecyclerView.Adapter<Sd
             holder.itemView.context.startActivity(intentDetail)
         }
     }
+
+    override fun getItemCount(): Int = listSdg.size
 
     private lateinit var onItemClickCallback: OnItemClickCallback
 
@@ -44,10 +52,5 @@ class SdgAdapter(private val listSdg: ArrayList<Sdgs>) : RecyclerView.Adapter<Sd
         fun onItemClicked(data: Sdgs)
     }
 
-    override fun getItemCount(): Int = listSdg.size
-
-}
-
-private fun ImageView.setImageResource(photo: String) {
 
 }

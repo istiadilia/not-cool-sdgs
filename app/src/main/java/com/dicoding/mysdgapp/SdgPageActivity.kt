@@ -2,6 +2,8 @@ package com.dicoding.mysdgapp
 
 import android.os.Build
 import android.os.Bundle
+import android.view.MenuItem
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.bumptech.glide.Glide
 import com.dicoding.mysdgapp.databinding.ActivitySdgPageBinding
@@ -40,8 +42,18 @@ class SdgPageActivity : AppCompatActivity() {
                 .load(sdgs.photo)
                 .into(binding.pageImage)
             Glide.with(this)
-                .load(sdgs.bgphoto)
+                .load(sdgs.bgPhoto)
                 .into(binding.pageImageBg)
         }
+    }
+
+    // share action
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            R.id.share_button -> {
+                Toast.makeText(this, "Share ${sdgs.name}", Toast.LENGTH_SHORT).show()
+            }
+        }
+        return super.onOptionsItemSelected(item)
     }
 }

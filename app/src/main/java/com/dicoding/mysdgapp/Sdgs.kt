@@ -7,7 +7,8 @@ import kotlinx.parcelize.Parcelize
 data class Sdgs(
     val name: String,
     val type: String,
+    val explanation: String,
     val description: String,
     val photo: String,
-    val bgphoto: String
+    val bgPhoto: String
 ) : Parcelable
