@@ -51,7 +51,7 @@
         <item>Responsible Consumption and Production</item>
         <item>Climate Action</item>
         <item>Life Below Water</item>
-        <item>Life on Island</item>
+        <item>Life on Land</item>
         <item>Peace, Justice, and Strong Institutions</item>
         <item>Partnerships for the Goals</item>
     </string-array>
@@ -141,10 +141,10 @@
     <string-array name="data_background">
         <item>https://cdn.punchng.com/wp-content/uploads/2019/12/05092036/Poverty.jpg</item>
         <item>https://i.guim.co.uk/img/media/d548467e5f91002c8b09b42460d670d1aff3626e/0_244_3500_2100/master/3500.jpg?width=1200&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=d53835de54bd1553056396b4b1a8fa0d</item>
-        <item>https://media.istockphoto.com/id/1347375453/photo/hands-holding-green-happy-smile-face-paper-cut-good-feedback-rating-and-positive-customer.jpg?s=612x612&amp;w=0&amp;k=20&amp;c=acMuJHuCTrNMu1hgUjxj17X6ckBS5XuhHLRW440xU3w=</item>
-        <item>https://media.globalcitizen.org/thumbnails/d4/cc/d4ccde3e–4a87-48f7-b0b1-963f3f3c2c18/4-quality-education-children-in-class-hero.jpg__1600x900_q85_crop_subsampling-2.jpg</item>
+        <item>https://www.wellbeingpeople.com/app/uploads/2018/07/wellbeing-woman-sitting-in-sunny-field.jpg</item>
+        <item>https://www.ei-ie.org/image/Quality-education.jpg/lead.jpg</item>
         <item>https://www.undrr.org/sites/default/files/styles/landscape_16_9/public/2021-04/Gender%20Equality%20slogan.jpg?itok=h2kooqLP</item>
-        <item>https://www.iisd.org/sites/default/files/styles/og_image/public/2022–03/hand-washing-water.jpg?itok=542sjljT</item>
+        <item>https://s31955.pcdn.co/wp-content/uploads/2019/11/clean-water1.jpg</item>
         <item>https://www.eliamep.gr/wp-content/uploads/2020/06/Policy-paper-34.jpg</item>
         <item>https://sustainability.uga.edu/_resources/images/sdg-highlights/37509-014.jpg</item>
         <item>https://bsg-b2c-app-s3.s3.amazonaws.com/files/sdg09-hero-62a1926a97030.jpg</item>

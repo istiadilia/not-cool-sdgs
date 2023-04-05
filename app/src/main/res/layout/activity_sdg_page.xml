@@ -13,7 +13,7 @@
             <ImageView
                 android:id="@+id/page_image_bg"
                 android:layout_width="fill_parent"
-                android:layout_height="250dp"
+                android:layout_height="300dp"
                 android:adjustViewBounds="true"
                 android:scaleType="centerCrop"
                 android:src="@drawable/ic_launcher_background"
@@ -65,21 +65,31 @@
             android:textColor="@color/white"
             android:textSize="18sp"
             android:textStyle="bold"
+            android:shadowColor="@color/text_shadow"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="10"
             app:layout_constraintBottom_toTopOf="@id/page_title"
             app:layout_constraintStart_toEndOf="@id/page_image" />
 
         <TextView
             android:id="@+id/page_title"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:layout_marginBottom="20dp"
+            android:layout_marginEnd="20dp"
             android:text="@string/sdg_name"
             android:textColor="@color/white"
-            android:textSize="32sp"
+            android:textSize="28sp"
             android:textStyle="bold"
+            android:shadowColor="@color/text_shadow"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="20"
             app:layout_constraintBottom_toBottomOf="@id/page_image_bg"
             app:layout_constraintStart_toEndOf="@+id/page_image"
+            app:layout_constraintEnd_toEndOf="parent"
             tools:ignore="MissingConstraints,TextContrastCheck" />
 
         <TextView
@@ -107,6 +117,7 @@
             android:layout_marginStart="20dp"
             android:layout_marginTop="20dp"
             android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
             android:lineSpacingMultiplier="1"
             android:text="@string/sdg_description"
             android:textColor="@android:color/black"

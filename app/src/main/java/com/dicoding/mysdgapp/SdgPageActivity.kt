@@ -1,12 +1,12 @@
 package com.dicoding.mysdgapp
 
+import android.content.Intent
 import android.os.Build
 import android.os.Bundle
 import android.view.MenuItem
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.bumptech.glide.Glide
-import com.bumptech.glide.request.RequestOptions.bitmapTransform
 import com.dicoding.mysdgapp.databinding.ActivitySdgPageBinding
 
 class SdgPageActivity : AppCompatActivity() {
@@ -25,6 +25,10 @@ class SdgPageActivity : AppCompatActivity() {
 
         binding = ActivitySdgPageBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        binding.backButton.setOnClickListener {
+            finish()
+        }
 
         sdgs = if (Build.VERSION.SDK_INT >= 33) {
             intent.getParcelableExtra<Sdgs>(EXTRA_SDG, Sdgs::class.java)!!
@@ -45,8 +49,23 @@ class SdgPageActivity : AppCompatActivity() {
                 .into(binding.pageImage)
             Glide.with(this)
                 .load(sdgs.bgPhoto)
-                //.override(15, 15)
+                //.transform(new BlurTransformation(10))
                 .into(binding.pageImageBg)
+
+            binding.shareButton.setOnClickListener{
+                val intent = Intent(Intent.ACTION_SEND)
+                intent.type = "text/plain"
+                intent.putExtra(Intent.EXTRA_SUBJECT, sdgs.name)
+                intent.putExtra(
+                    Intent.EXTRA_TEXT, """
+                    Hi! Do you know SDG ${sdgs.number}, ${sdgs.name}?
+                    Its goal is to ${sdgs.explanation}
+                    
+                    Find this interesting? Read more at https://sdgs.un.org/
+                """.trimIndent()
+                )
+                startActivity(Intent.createChooser(intent, "Share to: "))
+            }
         }
     }
 

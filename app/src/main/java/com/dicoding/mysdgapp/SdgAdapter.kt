@@ -21,7 +21,7 @@ class SdgAdapter(private val listSdg: ArrayList<Sdgs>) : RecyclerView.Adapter<Sd
 
     // memasukkan preview di cardview
     override fun onBindViewHolder(holder: SdgAdapter.ListViewHolder, position: Int) {
-        val (number, name, type, photo) = listSdg[position]
+        val (number, name, type, _, _, photo, _) = listSdg[position]
         Glide.with(holder.itemView.context)
             .load(photo)
             .into(holder.binding.imgItemPhoto)
@@ -44,10 +44,6 @@ class SdgAdapter(private val listSdg: ArrayList<Sdgs>) : RecyclerView.Adapter<Sd
     override fun getItemCount(): Int = listSdg.size
 
     private lateinit var onItemClickCallback: OnItemClickCallback
-
-    fun setOnItemClickCallback(onItemClickCallback: OnItemClickCallback) {
-        this.onItemClickCallback = onItemClickCallback
-    }
 
     interface OnItemClickCallback {
         fun onItemClicked(data: Sdgs)
